@@ -1,4 +1,4 @@
-## 🧬 Análisis de RNAseq: "Bulk mRNA-seq data from wild-type and prostate cancer-developing mice reveal a reprogramming of the estrogen and androgen responses after carcinogenesis"
+## 🧬 Análisis de Pedigree de la Familia 04
 
 ---
 
@@ -76,11 +76,9 @@ Este proyecto presenta un análisis del pedigree de la familia.
 
 - `out_logs`: reportes de todos los out logs de los jobs de slurm utilizados para el análisis 
 
-- `scripts`: jobs de slurm, incluyendo aquellos para la descarga de datos de SRA, descarga del genoma de referencia, análisis de FastQC y MultiQC, Trimming de datos, pseudoalineamiento y el archivo .Rmd sobre el análisis diferencial de genes. 
+- `scripts`: archivos de R para análisis de variantes raras. 
 
-- `quality`: reporte de análisis de control de calidad (realizado con FastQC y MultiQC) sobre los 16 archivos de las secuencias crudas, y después del filtrado utilizando Trimmomatic. 
-
-- `DEG_results`: contiene las matrices de conteos y los archivos de formato necesarios para el análisis de expresión diferencial de genes, así como los gráficos generados a partir de dicho análisis.
+- `results`: contiene las matrices de conteos y los archivos de formato necesarios para el análisis de expresión diferencial de genes, así como los gráficos generados a partir de dicho análisis.
 
 - `README.md` 
 
@@ -88,91 +86,13 @@ Este proyecto presenta un análisis del pedigree de la familia.
 
 - `index.html`: reporte renderizado en formato html
 
-### 📁 Estructura del Repositorio en el Cluster
-
-```
-Equipo1/
-├── script/
-│   └── out_logs/
-├── data/
-│   ├── raw/
-│   └── processed/
-│       ├── TRIM_results/
-│       └── UNPAIR_results/
-├── quality1/
-│   ├── fastQC_analysis/
-│   └── multiQC_analysis/
-│       └── multiqc_data/
-├── quality2/
-│   └── multiqc_data/
-├── reference/
-├── kallisto_quant/
-│   └── pseudoalineamiento/
-│       ├── SRR27790670/
-│       ├── SRR27790671/
-│       ├── SRR27790672/
-│       ├── SRR27790673/
-│       ├── SRR27790674/
-│       ├── SRR27790675/
-│       ├── SRR27790676/
-│       └── SRR27790677/
-├── DEG_results/
-└── TRIM_results/
-```
-
-El repositorio principal comienza en el directorio de "Equipo1": `/mnt/data/bioinfo-estadistica-2/RNAseq_2026/equipos/Equipo1`
-
-Después se crearon diferentes repositorios de acuerdo a los análisis realizados: 
-
-1. `script`: ejecutables `.sh` para realizar el análisis de FastQC, MultiQC, Trimming, pseudoalineamiento, descarga de datos de NCBI. Este directorio también incluye los archivos `.log` y `.err` de cada script, en el directorio `out_log`
-
-2. `data/`: 
-
-	- `raw/`: datos crudos descargados de la página de [SRA del Bioproject](https://www.ncbi.nlm.nih.gov/Traces/study/?acc=PRJNA1071175&o=acc_s%3Aa), se descargaron un total de 16 secuencias ya que eran formato PE
-
-	- `processed/`: datos posteriores al Trimming, se obtuvieron un total de 32 secuencias `(*_trimmed.fq.gz, *_unpaired.fq.gz)`. 
-		
-		- `TRIM_results`: son las lecturas que pasaron el filtrado de calidad junto con su pareja. Ambas lecturas del par siguen juntas y sincronizadas. 
-
-		- `UNPAIR_results`: son lecturas que pasaron el filtrado de calidad, pero cuya pareja fue descartada (por baja calidad o por quedar muy corta). 
-
-3. `quality1/`: análisis de FastQC y MultiQC sobre las lecturas crudas
-
-4. `quality2/`: análisis de FastQC y MultiQC sobre las lecturas procesadas por Trimmomatic
-
-5. `reference/`: datos del genoma de referencia de ratón, descargados desde NCBI
-
-6. `kallisto_quant/`:
-
-	- `pseudoalineamiento/`: almacena los datos sobre cuantificación de transcritos y conteos en formato `.tsv` y `.h5`, y los metadatos del proceso (parámetros y reads procesadas) en formato `.json`
-
-	- `transcripts.idx`: índice para hacer el pseudoalineamiento de cada muestra
-
-7. `DEG_results`: contiene las matrices de conteos y los archivos de formato necesarios para el análisis de expresión diferencial de genes, así como los gráficos generados a partir de dicho análisis.
-
-8. `TRIM_results`: resultado de las lecturas que pasaron el filtrado de calidad junto con su pareja. Ambas lecturas del par siguen juntas y sincronizadas; este directorio contiene la misma información que el ubicado en `data/processed/` solo que se añadió a la estructura de directorios como uno independiente
-
 ## 📦 Requisitos y Dependencias
 
 ### Software
 
 | Herramienta | Versión | Uso |
 |-------------|---------|-----|
-| FastQC | v.0.11.3 | Control de calidad |
-| MultiQC | v.1.5 | Control de calidad
-| Trimmomatic | v.0.33 | Trimming |
-| Kallisto | v.0.45.0 | Pseudoalineamiento |
 | R | - | Análisis estadístico |
-
-### Módulos del cluster
-
-```
-module load fastqc/0.11.3
-module load anaconda3/2025.06
-  source activate multiqc-1.5
-module load trimmomatic/0.33
-module load kallisto/0.45.0
-```
 
 ## 📚 Referencias
 
