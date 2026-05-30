@@ -2,14 +2,11 @@
 
 ---
 
-### 👥 Equipo 1
+### 👥 Autor
 
 | Nombre | Usuario GitHub |
 |--------|:---------------:|
-| Gutierrez Piñon Ernesto | [@egutierrez](https://github.com/usuario1) |
 | Pineda Morán Natalie Berenice | [@npineda](https://github.com/nataliebpm) |
-| Pinto Sanchez Alejandro | [@apinto](https://github.com/AlejandroPintoS) |
-| Reyes Ramírez Mónica | [@mreyes](https://github.com/MonykRey) |
 
 ---
 
@@ -17,8 +14,8 @@
 
 | Datos | Información |
 |-------|:---------:|
-| 📅 **Fecha** | 20 Mayo 2026 |
-| 📚 **Materia** | Bioinformática y Estadística II |
+| 📅 **Fecha** | 29 Mayo 2026 |
+| 📚 **Materia** | Genética y Genómica I |
 | 🎓 **Semestre** | 4° Semestre |
 | 🏫 **Institución** | *ENESJ Lic. Ciencias Genómicas* |
 
@@ -27,20 +24,7 @@
 
 ## Introducción
 
-Este proyecto presenta un análisis de expresión diferencial de genes utilizando datos de RNA-seq, descargados de SRA y pertenecientes al artículo "Bulk mRNA-seq data from wild-type and prostate cancer-developing mice reveal a reprogramming of the estrogen and androgen responses after carcinogenesis". En este artículo se busca estudiar cómo las hormonas sexuales —andrógenos y estrógenos— modulan la expresión génica en la próstata normal y en la próstata tumoral, y entender los cambios transcriptómicos que ocurren tras la carcinogénesis, sin embargo para este proyecto se realizó el análisis diferencial de genes únicamente utilizando muestras de próstata en un estado normal. 
-
-Se analizaron 4 réplicas biológicas de tejido de próstata de ratones para cada una de las siguientes condiciones: *próstata normal-estradiol vs. próstata normal-vehículo*, siendo en total 8 muestras analizadas. Estas muestras fueron obtenidas de tejido extraído de ratones de al menos 24 semanas de edad, castrados previamente para asegurar privación hormonal y fueron recolectadas 24 horas después de las inyecciones hormonales. 
-
-| SRA Run ID | GSM ID | Condición | Tratamiento | Réplica | Tipo de lectura |
-|---|---|---|---|---|---|
-| SRR27790670 | GSM8047494 | Próstata normal | Estradiol | Tratamiento 1 | Paired-end |
-| SRR27790671 | GSM8047493 | Próstata normal | Estradiol | Tratamiento 2 | Paired-end |
-| SRR27790672 | GSM8047492 | Próstata normal | Estradiol | Tratamiento 3 | Paired-end |
-| SRR27790673 | GSM8047491 | Próstata normal | Estradiol | Tratamiento 4 | Paired-end |
-| SRR27790674 | GSM8047490 | Próstata normal | Vehículo (control) | Control 1 | Paired-end |
-| SRR27790675 | GSM8047488 | Próstata normal | Vehículo (control) | Control 2 | Paired-end |
-| SRR27790676 | GSM8047486 | Próstata normal | Vehículo (control) | Control 3 | Paired-end |
-| SRR27790677 | GSM8047484 | Próstata normal | Vehículo (control) | Control 4 | Paired-end |
+Este proyecto presenta un análisis del pedigree de la familia. 
 
 ***Enlace al reporte renderizado***: https://nataliebpm.github.io/Analisis-de-RNA-seq-BEII/
 
