@@ -1,4 +1,0 @@
-Aqui deben estar los diagramas de flujo sobre el procedimiento y el pipeline
-
-Además de las figuras realizadas para las variantes en una carpeta de figures
-
