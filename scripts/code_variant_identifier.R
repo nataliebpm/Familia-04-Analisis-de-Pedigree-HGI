@@ -199,7 +199,7 @@ print(candidatas_exclusivas, n = 50)
 cat("\nTotal genes exclusivos del probando:", nrow(candidatas_exclusivas), "\n")
 
 # --------------------------------------------------------------------------
-# Lista final para buscar en OMIM
+# Lista final para buscar en OMIM y ClinVar
 candidatas_exclusivas %>%
   dplyr::select(GENE, AA_CHANGE, ANNOTATION, inheritance, TGP_FREQ) %>%
   dplyr::arrange(inheritance, GENE) %>%
