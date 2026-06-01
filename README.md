@@ -14,7 +14,7 @@
 
 | Datos | Información |
 |-------|:---------:|
-| 📅 **Fecha** | 29 Mayo 2026 |
+| 📅 **Fecha** | 01 Junio 2026 |
 | 📚 **Materia** | Genética y Genómica I |
 | 🎓 **Semestre** | 4° Semestre |
 | 🏫 **Institución** | *ENESJ Lic. Ciencias Genómicas* |
@@ -24,7 +24,7 @@
 
 ## Introducción
 
-Este proyecto presenta un análisis del pedigree de la familia. 
+Este proyecto presenta un análisis del pedigree de la Familia 04. 
 
 ***Enlace al reporte renderizado***: https://nataliebpm.github.io/Analisis-de-RNA-seq-BEII/
 
@@ -32,59 +32,21 @@ Este proyecto presenta un análisis del pedigree de la familia.
 
 ## Pipeline
 
-1. Script:`download_RNAdata.sh`
+1. Script:`code_variant_identifier.R`
 
-	- a) Descargar datos de NCBI en SRA, b) Descargar metadatos
+	- Cargar librerías
 	
-	- Se descargaron los archivos de secuencia cruda FASTQ de las 8 muestras en el cluster utilizando la página de SRA del BioProject donde se almacenan los datos del artículo, se descargaron un total de 16 archivos de SRA ya que eran PE-reads. 
-
-2. Script: `quality1.sh`
-
-	- a) Análisis de control de calidad de datos crudos utilizando FASTQC
-
-3. Script: `quality2.sh`
-
-	- a) Análisis de control de calidad de datos crudos utilizando MultiQC
-	
-4. Script: `trimm_adapters.sh`
-
-	- a) Eliminar adaptadores y realizar filtrado de los archivos crudos de SRA utilizando Trimmomatic (trimmomatic/0.33)
-	
-	- Durante este análisis se generaron 32 archivos FASTQ de las secuencias procesadas, ya que Trimmomatic genera 2 archivos procesados `(*_trimmed.fq.gz, *_unpaired.fq.gz)` por cada archivo FASTQ de secuencias crudas
-
-5. Script: `qc2_trimmed.sh`
-
-	- a) Análisis de control de calidad de secuencias filtradas utilizando FASTQC, b) Análisis de control de calidad utilizando MultiQC
-
-6. Script: `reference.sh`
-
-	- a) Descargar transcriptoma de referencia de *Mus musculus* (cdna, ncrna) de NCBI
-
-7. Script: `genome_index.sh`
-
-	- a) Indexar genoma de *Mus musculus* utilizando Kallisto (kallisto/0.45.0)
-
-8. Script: `pseudoalineamiento.sh`
-
-	- a) Realizar alineamiento de las secuencias utilizando Kallisto (kallisto/0.45.0)
-
-9. Script: `RNA_seq_analisis.Rmd`
-
-	- a) Carga de datos (tximport + anotación GTF), b) Normalización (rlog, z-score), c) Visualización exploratoria (PCA), d) Evaluación de batch effect, e) Expresión diferencial (DESeq2 + apeglm), f) Volcano Plot, g) Análisis funcional (gPRofiler)
-
 ### 📁 Estructura del Repositorio en GitHub
 
-- `out_logs`: reportes de todos los out logs de los jobs de slurm utilizados para el análisis 
+- `data`: pedigrí de las diferentes familias, además de los datos en formato `*.xlsx` de la familia 04 para realizar el análisis. 
 
 - `scripts`: archivos de R para análisis de variantes raras. 
 
-- `results`: contiene las matrices de conteos y los archivos de formato necesarios para el análisis de expresión diferencial de genes, así como los gráficos generados a partir de dicho análisis.
+- `results`: contiene las tablas generadas con R y la infografía sobre la metodología
 
 - `README.md` 
 
-- `Final_Bioproject_Report`: reporte final en formato Rmd
-
-- `index.html`: reporte renderizado en formato html
+- `Final_Bioproject_Report`: reporte final en formato pdf
 
 ## 📦 Requisitos y Dependencias
 
