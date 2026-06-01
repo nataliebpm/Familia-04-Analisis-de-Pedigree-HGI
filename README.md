@@ -64,7 +64,7 @@ Este proyecto presenta un análisis del pedigree de la Familia 04.
 
 - `README.md` 
 
-- `Final_Bioproject_Report`: reporte final en formato pdf
+- `Proyecto_Final_GHI.pdf`: reporte final en formato pdf
 
 ## 📦 Requisitos y Dependencias
 
