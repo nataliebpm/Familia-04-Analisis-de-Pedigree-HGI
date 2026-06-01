@@ -96,12 +96,20 @@ Este proyecto presenta un análisis del pedigree de la familia.
 
 ## 📚 Referencias
 
-- Lafront, C., Germain, L., & Audet-Walsh, É. (2024). Bulk mRNA-seq data from wild-type and prostate cancer-developing mice reveal a reprogramming of the estrogen and androgen responses after carcinogenesis. *Data in Brief*, *57*, 110870. https://doi.org/10.1016/j.dib.2024.110870
+- Peippo, M., & Ignatius, J. (2011). Pitt-Hopkins syndrome. Molecular Syndromology, 2(3–5), 171–180. https://pmc-ncbi-nlm-nih-gov.translate.goog/articles/PMC3366706/?_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
 
-- Ramírez-de-Arellano, A., Pereira-Suárez, A. L., Rico-Fuentes, C., López-Pulido, E. I., Villegas-Pineda, J. C., & Sierra-Diaz, E. (2022). Distribution and effects of estrogen receptors in prostate cancer: Associated molecular mechanisms. Frontiers in Endocrinology, 12, 811578. https://doi.org/10.3389/fendo.2021.811578
+- Online Mendelian Inheritance in Man (OMIM). (s. f.). Pitt-Hopkins syndrome; PTHS (Entry No. 610954). Johns Hopkins University. Recuperado el 1 de junio de 2026, de https://www.omim.org/entry/610954?search=TCF4
 
-- Belluti, S., Imbriano, C., & Casarini, L. (2023). Nuclear estrogen receptors in prostate cancer: From genes to function. Cancers, 15(18), 4653. https://doi.org/10.3390/cancers15184653
+- Dong, C., Wei, P., Jian, X., Gibbs, R., Boerwinkle, E., Wang, K., & Liu, X. (2014). Comparison and integration of deleteriousness prediction methods for nonsynonymous SNVs in whole exome sequencing studies. https://pmc.ncbi.nlm.nih.gov/articles/PMC4375422/
 
-- Richter, C. A., Taylor, J. A., Ruhlen, R. L., Welshons, W. V., & Vom Saal, F. S. (2007). Estradiol and bisphenol A stimulate androgen receptor and estrogen receptor gene expression in fetal mouse prostate mesenchyme cells. Environmental Health Perspectives, 115(6), 902–908. https://pmc.ncbi.nlm.nih.gov/articles/PMC1892114/
+- Ioannidis, N. M., Rothstein, J. H., Pejaver, V., Middha, S., McDonnell, S. K., Baheti, S., Musolf, A., Li, Q., Holzinger, E., Karyadi, D., Cannon-Albright, L. A., Teerlink, C. C., Stanford, J. L., Isaacs, W. B., Xu, J., Cooney, K. A., Lange, E. M., Schleutker, J., Carpten, J. D., ... Sieh, W. (2016). REVEL: An ensemble method for predicting the pathogenicity of rare missense variants. https://pmc.ncbi.nlm.nih.gov/articles/PMC5065685/
 
-- Dobbs, R.W., Malhotra, N.R., Greenwald, D.T. et al. Estrogens and prostate cancer. Prostate Cancer Prostatic Dis 22, 185–194 (2019). https://doi.org/10.1038/s41391-018-0081-6
+- Sweatt, J. D. (2013). Pitt–Hopkins syndrome: Intellectual disability due to loss of TCF4-regulated gene transcription. Experimental & Molecular Medicine, 45(5), e21. https://www-nature-com.translate.goog/articles/emm201332?error=cookies_not_supported&code=c200c891-0b50-4abe-8cdf-f428264847dc&_x_tr_sl=en&_x_tr_tl=es&_x_tr_hl=es&_x_tr_pto=tc
+
+- National Organization for Rare Disorders (NORD). (s. f.). Pitt-Hopkins syndrome. Recuperado el 1 de junio de 2026, de https://rarediseases.org/es/rare-diseases/pitt-hopkins-syndrome/
+
+- NCBI MedGen. (s. f.). Pitt-Hopkins syndrome (Concept ID: C1970431). National Center for Biotechnology Information, U.S. National Library of Medicine. Recuperado el 1 de junio de 2026, de https://www.ncbi.nlm.nih.gov/medgen/C1970431
+
+- Online Mendelian Inheritance in Man (OMIM). (s. f.). Transcription factor 4; TCF4 (Entry No. 602272). Johns Hopkins University. Recuperado el 1 de junio de 2026, de https://omim.org/entry/602272
+
+- National Center for Biotechnology Information (NCBI). (s. f.). VCV000381549.12: NM_001083962.2(TCF4):c.1727G>A (p.Arg576Gln). ClinVar. Recuperado el 1 de junio de 2026, de https://www.ncbi.nlm.nih.gov/clinvar/variation/381549/
