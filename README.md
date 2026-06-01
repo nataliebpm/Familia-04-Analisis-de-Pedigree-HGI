@@ -26,7 +26,9 @@
 
 Este proyecto presenta un análisis del pedigree de la Familia 04. 
 
-***Enlace al reporte renderizado***: https://nataliebpm.github.io/Analisis-de-RNA-seq-BEII/
+***Enlace al reporte en Google Drive***:  [GHI_Proyecto_Final](https://docs.google.com/document/d/1r7sVipL6qnkB8JmlQ0gQZ5pwVh-4o9OFOSSj556zUU0/edit?usp=sharing)
+
+***El archivo en formato PDF se encuentra al inicio de este repositorio con el nombre "Proyecto_Final_GHI.pdf"***
 
 ---
 
@@ -35,6 +37,22 @@ Este proyecto presenta un análisis del pedigree de la Familia 04.
 1. Script:`code_variant_identifier.R`
 
 	- Cargar librerías
+	
+	- Ver tipo de herencia: De novo, autosómica recesiva (AR), AR compuesta, autosómica dominante (AD) o ligada al cromosoma X, y "otro"
+	
+	- Realizar filtrado de variantes: Cobertura mínima de 10×, al menos 3 lecturas soportando la variante, GQ ≥ 30 y QUAL (Phred) ≥ 30. Adicionalmente, se evaluó el balance alélico, esperando una proporción entre 0.20 y 0.80 para variantes heterocigotas y >0.80 para homocigotas
+	
+	- Guardar las variantes candidatas en otro vector: `candidatas`
+	
+	- Asociar variantes a genes y realizar filtrado poblacional: UtilizandoThe 1K Genomes Project (TGP) y Exome Sequencing Project (ESP)
+	
+	- Estimar su score patogenicidad utilizando diferentes algoritmos: SIFT, MIT, LTR, PPH2
+	
+	- Guardar aquellas con un mayor score: `top_candidatas`
+	
+	- Identitifcar variantes no compartidas entre los parientes y el probando: `candidatas_exclusivas`
+	
+	- Contrastar la información de las variantes filtradas con bases de datos públicas (OMIM y ClinVar)
 	
 ### 📁 Estructura del Repositorio en GitHub
 
