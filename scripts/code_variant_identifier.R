@@ -69,12 +69,10 @@ cat("TR >= 10:    ", sum(D$TR_num >= 10, na.rm = TRUE), "\n")
 cat("VR >= 3:     ", sum(D$VR_num >= 3,  na.rm = TRUE), "\n")
 cat("GQ >= 20:    ", sum(D$GQ_num >= 30, na.rm = TRUE), "\n")
 cat("QUAL >= 30:  ", sum(D$QUAL_num >= 30, na.rm = TRUE), "\n")
-cat("FILTER=PASS: ", sum(D$FILTER == "PASS", na.rm = TRUE), "\n")
 
 # Aplicar filtro de calidad
 D_filt <- D %>%
   dplyr::filter(
-    FILTER == "PASS",          # pasó filtros del llamador
     TR_num  >= 10,             # cobertura mínima 10x
     VR_num  >=  3,             # al menos 3 lecturas soportan la variante
     GQ_num  >= 30,             # calidad de genotipo aceptable
